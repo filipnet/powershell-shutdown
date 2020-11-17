@@ -27,13 +27,14 @@ function Show-Menu {
     Write-Host "2: Press '2' for shutdown serverrole B." -ForegroundColor Blue
     Write-Host "3: Press '3' for shutdown serverrole C." -ForegroundColor Blue
     Write-Host "Q: Press 'Q' to quit." -ForegroundColor Blue
+    Write-Host ""
 }
 
 # Execution block #####################################################################
 
 do {
      Show-Menu
-     $input = Read-Host "Please make a selection"
+     $input = Read-Host "Please make a selection then press ENTER"
      switch ($input) {
            '1' {
                 cls
